@@ -1,5 +1,11 @@
+resource "random_string" "test" {
+  length  = 4
+  special = false
+  upper   = false
+}
+
 resource "azurerm_resource_group" "github_runners" {
-  name     = "github-runners-k"
+  name     = "github-runners-{random_string.test.result}"
   location = var.location
 }
 
