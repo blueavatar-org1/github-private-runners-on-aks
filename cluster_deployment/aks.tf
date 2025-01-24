@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "github_runners" {
-  name     = "github-runners"
+  name     = "github-runners-k"
   location = var.location
 }
 
