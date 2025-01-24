@@ -4,8 +4,8 @@ kind: Kustomization
 namespace: actions-runner-system
 
 resources:
-- github.com/actions/actions-runner-controller/tree/v0.22.2/config/github-webhook-server
+- github.com/actions/actions-runner-controller/tree/v0.27.6/config/github-webhook-server
 - ingress.yaml
 
 patchesStrategicMerge:
-- https://raw.githubusercontent.com/actions-runner-controller/actions-runner-controller/v0.22.2/config/default/gh-webhook-server-auth-proxy-patch.yaml
+- https://raw.githubusercontent.com/actions/actions-runner-controller/refs/tags/v0.27.6/config/default/manager_auth_proxy_patch.yaml
