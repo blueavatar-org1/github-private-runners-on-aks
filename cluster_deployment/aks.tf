@@ -5,7 +5,7 @@ resource "random_string" "test" {
 }
 
 resource "azurerm_resource_group" "github_runners" {
-  name     = "github-runners-{random_string.test.result}"
+  name     = "github-runners-${random_string.test.result}"
   location = var.location
 }
 
