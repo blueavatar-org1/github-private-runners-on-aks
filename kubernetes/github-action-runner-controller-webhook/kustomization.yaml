@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: actions-runner-system
 
 resources:
-- github.com/actions-runner-controller/actions-runner-controller/config//github-webhook-server?ref=v0.22.2
+- github.com/actions/actions-runner-controller/tree/v0.22.2/config/github-webhook-server
 - ingress.yaml
 
 patchesStrategicMerge:
